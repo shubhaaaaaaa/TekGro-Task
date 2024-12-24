@@ -1,25 +1,16 @@
-import CompanySection from './components/CompanySection'
-import FloatingMenu from './components/FloatingMenu'
-import {FooterSection} from './components/FooterSection'
-import { HeaderSection } from './components/HeaderSection'
-import HeroSection from './components/HeroSection'
-import ProjectDoc from './components/ProjectDoc'
-import Solutions from './components/Solutions'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
-    <div>
-      <HeaderSection />
-
-      <HeroSection />
-      <CompanySection />
-      <ProjectDoc />
-      <Solutions />
-      <FooterSection />
-
-      <FloatingMenu />
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

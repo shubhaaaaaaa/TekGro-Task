@@ -1,50 +1,46 @@
-# React + TypeScript + Vite
+# Tekgro Homepage and Blog Site  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based homepage and blog site developed using modular architecture, Tailwind CSS, Material-UI (MUI), and Vite. The project is built with a focus on reusable components to ensure maintainability and scalability.
 
-Currently, two official plugins are available:
+## Features  
+- **Homepage**: A modern homepage following the provoded Figma file.  
+- **Blog Page**: A dedicated blog page accessible via `/blog`.  
+- **Technologies Used**:  
+  - React  
+  - Tailwind CSS  
+  - Material-UI (MUI)  
+  - Vite  
+  - Modular Architecture  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Screenshots  
+### Homepage  
+![Homepage Screenshot](./images-readme/Home.png)  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Blog Page  
+![Blog Page Screenshot](./images-readme/Blog.png)  
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Installation and Usage  
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clone the Project**  
+   ```bash  
+   git clone <repository-url>  
+   cd <project-directory>  
+   ```  
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. **Install Dependencies**  
+   ```bash  
+   npm install  
+   ```  
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. **Run the Development Server**  
+   ```bash  
+   npm run dev  
+   ```  
+
+4. **Access the Application**  
+   - Open your browser and navigate to `http://localhost:5173/` for the homepage.  
+   - To visit the blog, go to `http://localhost:5173/blog`.  
